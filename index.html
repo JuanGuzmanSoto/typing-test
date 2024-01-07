@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Typing Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header> Typing Test!</header>
+<body>
+    <main>
+    <div id="typingTest">
+        <div id="testText"></div>
+        <textarea id="textInput" placeholder="Start typing..."></textarea>
+        <div id="timer">Time: <span id="timeLeft">30</span> seconds</div>
+        <div class="progress-bar" id="timeProgressBar">
+            <div class="progress" id="timeProgress"></div>
+        </div>
+        <div id="wpm">WPM: <span id="wordsPerMinute">0</span></div>
+        <div class="progress-bar" id="wpmProgressBar">
+            <div class="progress" id="wpmProgress"></div>
+        </div>
+        <div id="accuracy">Accuracy: <span id="accuracyPercentage">100%</span></div>
+        <button id="resetButton">Reset</button>
+        
+    </div>
+    
+    <div id="finalStats" style="display: none;">
+        <h2>Your Typing Test Results</h2>
+        <p>Words per minute: <span id="finalWPM">0</span></p>
+        <p>Accuracy: <span id="finalAccuracy">100%</span></p>
+        <button onclick="location.reload()">Try Again</button>
+    </div>
+
+</main>
+    <script type="module" src="script.js"></script>
+
+    <footer>
+        <p>Created by Juan Guzman-Soto &copy; 2023</p>
+    </footer>
+</body>
+</html>
